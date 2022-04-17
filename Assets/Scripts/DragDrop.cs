@@ -5,10 +5,10 @@ using UnityEngine;
 public class DragDrop : MonoBehaviour
 {
 
-
-    
     private float distanceFromCamera;
     Rigidbody2D r;
+    public float speed;
+    Vector3 pos;
 
     void Start()
     {
@@ -16,18 +16,22 @@ public class DragDrop : MonoBehaviour
         r = this.gameObject.transform.GetComponent<Rigidbody2D>();
     }
     //Evt. brug eller slet
-    //Vector3 lastPos;
+    
 
     void OnMouseDrag()
     {
-        Vector3 pos = Input.mousePosition;
+        pos = Input.mousePosition;
         pos.z = distanceFromCamera;
         pos = Camera.main.ScreenToWorldPoint(pos);
         r.velocity = (pos - this.gameObject.transform.position) * 10;
     }
+
     void OnMouseUp()
     {
         r.velocity = Vector3.zero;
+
+        //For at få den til at flyve efter at være kastet
+        r.velocity = (pos - this.gameObject.transform.position) * speed;
     }
 
 
