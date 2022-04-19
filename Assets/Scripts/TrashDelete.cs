@@ -33,6 +33,12 @@ public class TrashDelete : MonoBehaviour
             //Lav så den starter en animation når den dør.
         }
 
+        if (collision.collider.CompareTag("Lava"))
+        {
+            Destroy(this.gameObject);
+
+        }
+
     }
 
 }

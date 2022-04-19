@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Machine
   - Trash
+  - ConveyorBelt
+  - Lava
   layers:
   - Default
   - TransparentFX
