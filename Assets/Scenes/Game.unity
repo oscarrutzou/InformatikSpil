@@ -183,10 +183,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29deaabb44471114d94fa6f5e5c580b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 0
   score: 10
   rb2D: {fileID: 0}
-  thrust: 1
+  thrust: 0
 --- !u!61 &35004206
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -458,10 +458,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29deaabb44471114d94fa6f5e5c580b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 0
   score: 10
   rb2D: {fileID: 0}
-  thrust: 1
+  thrust: 0
 --- !u!61 &152807834
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -870,10 +870,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29deaabb44471114d94fa6f5e5c580b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 0
   score: 10
   rb2D: {fileID: 0}
-  thrust: 1
+  thrust: 0
 --- !u!61 &314095371
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1276,10 +1276,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29deaabb44471114d94fa6f5e5c580b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 0
   score: 10
   rb2D: {fileID: 0}
-  thrust: 1
+  thrust: 0
 --- !u!61 &435316731
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2431,10 +2431,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29deaabb44471114d94fa6f5e5c580b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 0
   score: 10
   rb2D: {fileID: 0}
-  thrust: 1
+  thrust: 0
 --- !u!61 &1207177632
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2704,10 +2704,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29deaabb44471114d94fa6f5e5c580b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 0
   score: 10
   rb2D: {fileID: 0}
-  thrust: 1
+  thrust: 0
 --- !u!61 &1290353493
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3794,10 +3794,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29deaabb44471114d94fa6f5e5c580b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 0
   score: 10
   rb2D: {fileID: 0}
-  thrust: 1
+  thrust: 0
 --- !u!61 &1919391727
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4060,6 +4060,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hest
       objectReference: {fileID: 0}
+    - target: {fileID: 2483282851915158446, guid: f1f49e6688080dc4fb45417513b18ae4, type: 3}
+      propertyPath: thrust
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2483282851915158446, guid: f1f49e6688080dc4fb45417513b18ae4, type: 3}
+      propertyPath: moveSpeed
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1f49e6688080dc4fb45417513b18ae4, type: 3}
 --- !u!1001 &7537715919723136421
@@ -4069,6 +4077,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1303003738}
     m_Modifications:
+    - target: {fileID: 7537715920049659753, guid: 611b26c84db3b3a4daae8d3e1b8bdc6e, type: 3}
+      propertyPath: thrust
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7537715920049659753, guid: 611b26c84db3b3a4daae8d3e1b8bdc6e, type: 3}
+      propertyPath: moveSpeed
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7537715920049659756, guid: 611b26c84db3b3a4daae8d3e1b8bdc6e, type: 3}
       propertyPath: m_Name
       value: Skrald
