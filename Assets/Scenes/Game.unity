@@ -152,7 +152,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 35004202}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.184, y: 3.469, z: 316.84695}
+  m_LocalPosition: {x: -9.695, y: 2.969, z: 316.84695}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1303003738}
@@ -427,7 +427,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 152807830}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.354, y: 2.956, z: 316.84695}
+  m_LocalPosition: {x: -7.51, y: 3.34, z: 316.84695}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1303003738}
@@ -839,7 +839,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 314095367}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.018, y: 2.948, z: 316.84695}
+  m_LocalPosition: {x: -9.25, y: 3.88, z: 316.84695}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1303003738}
@@ -1599,7 +1599,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 481974985}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.189, y: 3.464, z: 316.84695}
+  m_LocalPosition: {x: -10.209, y: 3.339, z: 316.84695}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1303003738}
@@ -2317,7 +2317,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1140584121}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.931, y: 3.917, z: 316.84695}
+  m_LocalPosition: {x: -9.807, y: 2.302, z: 316.84695}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1303003738}
@@ -2861,7 +2861,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1290353489}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.677, y: 3.444, z: 316.84695}
+  m_LocalPosition: {x: -8.794, y: 2.31, z: 316.84695}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1303003738}
@@ -3950,6 +3950,7 @@ BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
+<<<<<<< HEAD
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1873949597}
   m_Enabled: 1
@@ -4000,6 +4001,58 @@ SpriteRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1873949597}
   m_Enabled: 1
+=======
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873949597}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!50 &1873949599
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873949597}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
+--- !u!212 &1873949600
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873949597}
+  m_Enabled: 1
+>>>>>>> parent of ef78b25 (ijh)
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -4048,6 +4101,7 @@ Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
+<<<<<<< HEAD
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1873949597}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
@@ -4080,6 +4134,36 @@ MonoBehaviour:
 <<<<<<< HEAD
 =======
 >>>>>>> parent of 4e9f938 (Merge branch 'Oscar')
+=======
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873949597}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -11.693713, y: 2.133298, z: 316.84695}
+  m_LocalScale: {x: 1.2190316, y: 1.1651435, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1303003738}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1873949602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873949597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 908fcfcfc0735bd4ba4b2bb9991c33bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+--- !u!114 &1873949603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+>>>>>>> parent of ef78b25 (ijh)
   m_GameObject: {fileID: 1873949597}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -4091,11 +4175,14 @@ MonoBehaviour:
   score: 80
   rb2D: {fileID: 0}
   thrust: 1
+<<<<<<< HEAD
 =======
 >>>>>>> d059e3fade9c5788e72b9c63d30aa21bd96e78b3
 =======
   score: 80
 >>>>>>> parent of 4e9f938 (Merge branch 'Oscar')
+=======
+>>>>>>> parent of ef78b25 (ijh)
 --- !u!1 &1919391723
 GameObject:
   m_ObjectHideFlags: 0
@@ -4125,7 +4212,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1919391723}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.443, y: 3.917, z: 316.84695}
+  m_LocalPosition: {x: -10.732, y: 2.937, z: 316.84695}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1303003738}
@@ -4385,8 +4472,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 4e9f938 (Merge branch 'Oscar')
+=======
+>>>>>>> parent of ef78b25 (ijh)
   m_GameObject: {fileID: 1983370634}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -10.579114, y: 1.931798, z: 316.84695}
@@ -4425,11 +4515,14 @@ MonoBehaviour:
   score: 10
   rb2D: {fileID: 0}
   thrust: 1
+<<<<<<< HEAD
 =======
 >>>>>>> d059e3fade9c5788e72b9c63d30aa21bd96e78b3
 =======
   score: 10
 >>>>>>> parent of 4e9f938 (Merge branch 'Oscar')
+=======
+>>>>>>> parent of ef78b25 (ijh)
 --- !u!1 &2134877582
 GameObject:
   m_ObjectHideFlags: 0
