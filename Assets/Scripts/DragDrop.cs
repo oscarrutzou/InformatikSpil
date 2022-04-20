@@ -10,7 +10,6 @@ public class DragDrop : MonoBehaviour
     public float speed;
     Vector3 pos;
 
-
     void Start()
     {
         distanceFromCamera = Vector3.Distance(this.gameObject.transform.position, Camera.main.transform.position);

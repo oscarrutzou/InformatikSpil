@@ -8,7 +8,6 @@ TagManager:
   - Trash
   - ConveyorBelt
   - Lava
-  - Spawner
   layers:
   - Default
   - TransparentFX
