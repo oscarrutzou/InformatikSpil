@@ -13,8 +13,8 @@ public class TrashDelete : MonoBehaviour
     //Man behøver ikke at lave en rigidbody fordi at scriptet allerede ligger på traldet.
 
 
-    //public Rigidbody2D rb2D;
-    public float thrust = 1f;
+    private Rigidbody2D rb;
+
 
     //Den er i Awake, da den skal ske før "void Start."
     void Awake()
@@ -27,7 +27,8 @@ public class TrashDelete : MonoBehaviour
     void Start()
     {
         //Fetch the Rigidbody from the GameObject with this script attached
-       // m_Rigidbody = GetComponent<Rigidbody>();
+            rb = GetComponent<Rigidbody2D>();
+       
     }
     //Når den rammer noget, bliver metoden kaldt.
     public void OnCollisionEnter2D(Collision2D collision)
@@ -50,16 +51,21 @@ public class TrashDelete : MonoBehaviour
             Destroy(this.gameObject);
             Debug.Log("Delete");
         }
-
-
         
+    }
+
+    public void OnCollisionStay2D(Collision2D collision)
+    {
+
         if (collision.collider.CompareTag("ConveyorBelt"))
         {
-            
+
             Debug.Log("test");
-            //rb2D.velocity = new Vector2(0, 10);
+            rb.velocity = new Vector2(moveSpeed, 0);
+            //rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+
         }
-        
+
     }
 
 }
