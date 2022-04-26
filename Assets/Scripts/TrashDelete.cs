@@ -13,6 +13,9 @@ public class TrashDelete : MonoBehaviour
     //Man behøver ikke at lave en rigidbody fordi at scriptet allerede ligger på traldet.
 
 
+    //Noget extra hvis der er flere dødseffekter
+    public GameObject deathEffect;
+
     private Rigidbody2D rb;
 
 
@@ -36,14 +39,16 @@ public class TrashDelete : MonoBehaviour
         //Hvis den rammer en maskrine, bliver objektet slettet.
         if (collision.collider.CompareTag("Machine"))
         {
-            Destroy(this.gameObject);
-            Debug.Log("Point earned");
-
             //Sender scoren af objektet til "Display scriptet"
             display.UpdateScore(score);
 
+            Debug.Log("Point earned");
 
-            //Lav så den starter en animation når den dør.
+            GameObject e = Instantiate(deathEffect) as GameObject;
+
+            e.transform.position = transform.position;
+            Destroy(this.gameObject);
+            //GetComponent<Animator>().Play("BloodExp");            
         }
 
         if (collision.collider.CompareTag("Lava"))
