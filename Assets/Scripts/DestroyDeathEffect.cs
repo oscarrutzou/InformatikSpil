@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Threading;
 
 public class DestroyDeathEffect : MonoBehaviour
 {
@@ -14,8 +13,6 @@ public class DestroyDeathEffect : MonoBehaviour
     void Start()
     {
         countDown = animationTime;
-        Debug.Log("Viker det" + countDown + ", " + animationTime);
-        //Destroy(this.gameObject);
     }
 
 
@@ -25,7 +22,6 @@ public class DestroyDeathEffect : MonoBehaviour
 
         if (countDown <= 0f && !havePlayed)
         {
-            Debug.Log("Viker");
             //For at stoppe den med at spille flere gange.
             havePlayed = true;
             Destroy(this.gameObject);
