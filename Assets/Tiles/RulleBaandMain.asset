@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: RulleBaandMain
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: 21300000, guid: 0211a049f58ec4b4eaf1a79251b8730c, type: 3}
+  - {fileID: 21300000, guid: 48af9b517756cae4aae88b8ccd46b95d, type: 3}
+  - {fileID: 21300000, guid: d7a774e1bbe1a1c4e80f07883fb837d5, type: 3}
+  - {fileID: 21300000, guid: b42e7e55bbe68ac4ca6efe4b919094db, type: 3}
+  - {fileID: 21300000, guid: b870e42fed08aa84b9783f2c4314c16a, type: 3}
+  - {fileID: 21300000, guid: 52d2afb6dc0a9c3409a99f032ba1d88e, type: 3}
+  - {fileID: 21300000, guid: 33da0faf00a7de747967e06555e61ea5, type: 3}
+  - {fileID: 21300000, guid: 5343f2a3a1a290848b4f6f8737b2bd76, type: 3}
+  m_MinSpeed: 5
+  m_MaxSpeed: 5
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0

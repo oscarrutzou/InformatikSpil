@@ -45,3 +45,21 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: BG
+    uniqueID: 2824322275
+    locked: 0
+  - name: NonInterractive
+    uniqueID: 721570657
+    locked: 0
+  - name: Interractive
+    uniqueID: 3164687953
+    locked: 0
+  - name: Trash
+    uniqueID: 3681000877
+    locked: 0
+  - name: Lava
+    uniqueID: 2319441147
+    locked: 0
+  - name: UI
+    uniqueID: 881593165
+    locked: 0
