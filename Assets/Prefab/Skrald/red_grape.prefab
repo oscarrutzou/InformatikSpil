@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 908fcfcfc0735bd4ba4b2bb9991c33bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  throwSpeed: 3
 --- !u!114 &1502551147412514384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29deaabb44471114d94fa6f5e5c580b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  conveyorBeltSpeed: 3
   score: 10
   deathEffect: {fileID: 8746592379646103605, guid: 0c02faaecbb45d044a22a5e23d657ba4, type: 3}
 --- !u!70 &5864115699541294222

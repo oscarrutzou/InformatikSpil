@@ -12,7 +12,10 @@ public class Display : MonoBehaviour
     public TMPro.TextMeshProUGUI scoreText;
     //Til den nuværende score
     private int currentScore;
-    
+
+    //Til highscore
+    public TMPro.TextMeshProUGUI highScoreText;
+
     //Til timeren
     bool timerActive = false;
     float currentTime;
@@ -22,12 +25,34 @@ public class Display : MonoBehaviour
     {
         currentTime = 0;
 
-        //Slet efter have lavet UI
+        
+        highScoreText.text = "HighScore : " + PlayerPrefs.GetInt("HighScore", 0).ToString();
+
+        //Slet det efter have lavet UI og selve hvor man starter spillet
         StartTimer();
     }
 
     void Update()
     {
+
+        if (currentScore > PlayerPrefs.GetInt("HighScore",0))
+        {
+            PlayerPrefs.SetInt("HighScore", currentScore);
+            highScoreText.text = "HighScore : " + currentScore.ToString();
+        }
+
+
+
+        //Slet efter testning med highscore!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            PlayerPrefs.DeleteKey("HighScore");
+            highScoreText.text = "HighScore : " + PlayerPrefs.GetInt("HighScore", 0).ToString();
+        }
+        //Slet efter testning med highscore!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
         //Til timeren
         if (timerActive == true)
         {
@@ -55,5 +80,9 @@ public class Display : MonoBehaviour
         currentScore += score;
         scoreText.text = "Point : " + currentScore.ToString();
     }
+
+
+
+    
 
 }

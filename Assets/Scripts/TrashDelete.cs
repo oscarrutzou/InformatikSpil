@@ -5,13 +5,11 @@ using UnityEngine;
 public class TrashDelete : MonoBehaviour
 {
 
-    public float moveSpeed = 5;
+    [SerializeField] float conveyorBeltSpeed = 5;
     //Til hvor meget score de hver objekter har.
     public int score;
     //Laver en variable så man kan kontakte "Display" scriptet.
     private Display display;
-    //Man behøver ikke at lave en rigidbody fordi at scriptet allerede ligger på traldet.
-
 
     //Noget extra hvis der er flere dødseffekter
     public GameObject deathEffect;
@@ -48,7 +46,6 @@ public class TrashDelete : MonoBehaviour
 
             e.transform.position = transform.position;
             Destroy(this.gameObject);
-            //GetComponent<Animator>().Play("BloodExp");            
         }
 
         if (collision.collider.CompareTag("Lava"))
@@ -64,11 +61,8 @@ public class TrashDelete : MonoBehaviour
 
         if (collision.collider.CompareTag("ConveyorBelt"))
         {
-
-            Debug.Log("test");
-            rb.velocity = new Vector2(moveSpeed, 0);
-            //rb.constraints = RigidbodyConstraints2D.FreezeRotation;
-
+            //Bliver sendt hen af y-asken.
+            rb.velocity = new Vector2(conveyorBeltSpeed, 0);
         }
 
     }

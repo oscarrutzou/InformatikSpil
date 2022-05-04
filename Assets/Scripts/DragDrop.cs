@@ -7,16 +7,14 @@ public class DragDrop : MonoBehaviour
 
     private float distanceFromCamera;
     Rigidbody2D r;
-    public float speed;
+    public float throwSpeed;
     Vector3 pos;
 
     void Start()
     {
         distanceFromCamera = Vector3.Distance(this.gameObject.transform.position, Camera.main.transform.position);
         r = this.gameObject.transform.GetComponent<Rigidbody2D>();
-    }
-    //Evt. brug eller slet
-    
+    }    
 
     void OnMouseDrag()
     {
@@ -31,13 +29,6 @@ public class DragDrop : MonoBehaviour
         r.velocity = Vector3.zero;
 
         //For at få den til at flyve efter at være kastet
-        r.velocity = (pos - this.gameObject.transform.position) * speed;
+        r.velocity = (pos - this.gameObject.transform.position) * throwSpeed;
     }
-
-
-
-    //    //Virker ved venstre klik
-    //    if (Input.GetMouseButtonDown(0))
-
-
 }
