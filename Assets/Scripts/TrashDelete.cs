@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TrashDelete : MonoBehaviour
 {
@@ -8,8 +9,12 @@ public class TrashDelete : MonoBehaviour
     [SerializeField] float conveyorBeltSpeed = 5;
     //Til hvor meget score de hver objekter har.
     public int score;
+
+    //Til liv
+    public int life = 1;
+
     //Laver en variable så man kan kontakte "Display" scriptet.
-    private Display display;
+    Display display;
 
     //Noget extra hvis der er flere dødseffekter
     public GameObject deathEffect;
@@ -17,12 +22,12 @@ public class TrashDelete : MonoBehaviour
     private Rigidbody2D rb;
 
 
+
     //Den er i Awake, da den skal ske før "void Start."
     void Awake()
     {
         //Tilslutter sig "Display" scriptet.
         display = GameObject.FindObjectOfType<Display>();
-        //rb2D = gameObject.GetComponent<Rigidbody2D>();
     }
 
     void Start()
@@ -31,6 +36,7 @@ public class TrashDelete : MonoBehaviour
             rb = GetComponent<Rigidbody2D>();
        
     }
+
     //Når den rammer noget, bliver metoden kaldt.
     public void OnCollisionEnter2D(Collision2D collision)
     {
@@ -40,31 +46,38 @@ public class TrashDelete : MonoBehaviour
             //Sender scoren af objektet til "Display scriptet"
             display.UpdateScore(score);
 
-            Debug.Log("Point earned");
-
+            //Spawner en dødseffekt.
             GameObject e = Instantiate(deathEffect) as GameObject;
-
+            //Sætter dødseffekten til den samme position som skraldet.
             e.transform.position = transform.position;
+            //Ødelægger skraldet.
             Destroy(this.gameObject);
         }
 
+        //Når den rammer laver, mister man liv.
         if (collision.collider.CompareTag("Lava"))
         {
+            //Updater liv
+            display.UpdateLife(life);
+
+            //Send videre til gameover skærm når man har 0 liv
+            if (life == 0)
+            {
+                //Slukker timer
+                display.TurnOffTimer();
+            }
+            //Ødelægger skraldet.
             Destroy(this.gameObject);
-            Debug.Log("Delete");
         }
-        
     }
 
+    //Når den er ovenpå conveyorbeltet bliver den skubbet hen af x-aksen.
     public void OnCollisionStay2D(Collision2D collision)
     {
-
         if (collision.collider.CompareTag("ConveyorBelt"))
         {
-            //Bliver sendt hen af y-asken.
+            //Bliver sendt hen af x-asken.
             rb.velocity = new Vector2(conveyorBeltSpeed, 0);
         }
-
     }
-
 }
